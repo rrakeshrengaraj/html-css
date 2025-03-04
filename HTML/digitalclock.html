@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGI CLOCK</title>
+    <style>
+        body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right,#141e30, #243b55);
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.c{
+    font-size: 70px;
+    font-weight: bold;
+    background: rgba(0,0,0,0);
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0,0,0.3);
+}
+    </style>
+</head>
+<body>
+    <div class="c">
+        <span id="time"></span>
+    </div>
+    <script>
+    function clock(){
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+    let ampm = hours >= 12 ? 'PM' : 'AM';
+
+    hours = hours % 12 || 12;
+    minutes = minutes < 10 ? '0' +minutes : minutes;
+    seconds = seconds < 10 ? '0' +seconds : seconds;
+
+    let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+    document.getElementById('time').textContent = timeString;
+  
+}
+
+setInterval(clock, 1000);
+clock();
+    </script>    
+</body>
+</html>

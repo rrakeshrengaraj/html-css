@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalasalingam University Portal</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body styling */
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Header styling with logo */
+        header {
+            background: linear-gradient(90deg, #004080, #0073e6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header img {
+            width: 70px;
+            height: auto;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #003366;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #00509e;
+            border-radius: 5px;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Portal Modules styling */
+        .portal-section {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .portal-section h2 {
+            color: #004080;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .portal-section p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .portal-section ul {
+            list-style: none;
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        .portal-section li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f4f6f9;
+            border-radius: 4px;
+        }
+
+        .portal-section a {
+            display: inline-block;
+            padding: 8px 15px;
+            color: #fff;
+            background-color: #004080;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .portal-section a:hover {
+            background-color: #0073e6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <img src="logo.jpeg" alt="Kalasalingam University Logo">
+        <h1>Kalasalingam University Portal</h1>
+        <p>Your gateway to all academic and administrative resources</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#student-portal">Student Portal</a>
+        <a href="#faculty-portal">Faculty Portal</a>
+        <a href="#login">Login</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Student Portal Section -->
+        <div class="portal-section" id="student-portal">
+            <h2>Student Portal</h2>
+            <p>Access your course materials, check grades, and manage your schedule. Stay updated with important announcements and events.</p>
+            <ul>
+                <li><strong>Course Materials:</strong> <a href="#course-materials">View Materials</a></li>
+                <li><strong>Grades:</strong> <a href="#grades">Check Your Grades</a></li>
+                <li><strong>Class Schedule:</strong> <a href="#schedule">View Schedule</a></li>
+                <li><strong>Student Announcements:</strong> Stay informed about university events and notices.</li>
+            </ul>
+        </div>
+
+        <!-- Faculty Portal Section -->
+        <div class="portal-section" id="faculty-portal">
+            <h2>Faculty Portal</h2>
+            <p>Manage class schedules, update student records, and access teaching resources. Connect with students and stay on top of your courses.</p>
+            <ul>
+                <li><strong>Class Schedule:</strong> <a href="#faculty-schedule">View and Manage Schedule</a></li>
+                <li><strong>Student Records:</strong> <a href="#student-records">Update Student Information</a></li>
+                <li><strong>Teaching Resources:</strong> <a href="#teaching-resources">Access Resources</a></li>
+                <li><strong>Faculty Announcements:</strong> Stay informed about university updates and meetings.</li>
+            </ul>
+        </div>
+
+        <!-- Login Section -->
+        <div class="portal-section" id="login">
+            <h2>Login</h2>
+            <p>Already a member? Log in to access all resources and personalized information for your role.</p>
+            <a href="#login-page">Login Here</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kalasalingam University. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #f4a261;
+}
+
+/* Hero Section */
+.hero {
+    background: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #f4a261;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #e76f51;
+}
+
+/* About Me Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about .text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #e9ecef;
+    padding: 50px 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    width: 22%;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 1s;
+}
+
+.html { background-color: #f4a261; width: 90%; }
+.css { background-color: #2d3748; width: 85%; }
+.js { background-color: #4a90e2; width: 80%; }
+.react { background-color: #61dafb; width: 70%; }
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+}
+
+.projects-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 48%;
+    margin: 20px 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #2d3748;
+    color: white;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #f4a261;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e76f51;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}

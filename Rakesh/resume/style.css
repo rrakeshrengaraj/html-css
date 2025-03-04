@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4CAF50;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}
+.skill {
+    margin: 15px 0;
+    
+}
+
+progress {
+    width: 20%;
+    height: 20px;
+    border-radius: 30px;
+    appearance: none;
+    
+}
+
+progress[value] {
+    background-color: #e0e0e0;
+}
+
+progress[value="0"] {
+    background-color: red;
+}
+
+progress[value="50"] {
+    background-color: orange;
+}
+
+progress[value="100"] {
+    background-color: green;
+}
+#about h2{
+    padding: 50px px;
+    text-align: center;
+}
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4CAF50;
+}

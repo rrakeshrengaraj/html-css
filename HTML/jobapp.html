@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74EBD5 0%, #9FACE6 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        label, input, select, button, ol {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .field-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        input, select, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        ol {
+            text-align: center;
+            padding: 0;
+            list-style-position: inside;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Rocky Group of Companies</h2>
+        <h3>Job Application Form</h3>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"  required>
+
+        <label>Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Gender:</label>
+        <div class="field-group">
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+
+        <label>Skills:</label>
+        <div class="field-group">
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="skills" value="Javascript">
+            <label for="js">Javascript</label>
+            <input type="checkbox" id="py" name="skills" value="Python">
+            <label for="py">Python</label>
+        </div>
+
+        <label for="position">Position Applying for:</label>
+        <select name="position" id="position">
+            <option value="Select">Select</option>
+            <option value="Software Developer">Software Developer</option>
+            <option value="UI/UX Designer">UI/UX Designer</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="Project Manager">Project Manager</option>
+            <option value="IT Support">IT Support</option>
+        </select>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" min="0" required>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" required>
+
+        <ol>
+            <li>Fill in your personal details</li>
+            <li>Enter your email and phone number</li>
+            <li>Select your gender</li>
+            <li>List your relevant skills</li>
+            <li>Choose the job position you are applying for</li>
+            <li>Specify your years of experience</li>
+            <li>Upload your resume</li>
+            <li>Submit your job application</li>
+        </ol>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>

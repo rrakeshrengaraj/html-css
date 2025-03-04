@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>February Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .calendar {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            height: auto;
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: center;
+            width: 14.28%;
+            font-size: 24px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
+        td:hover {
+            background-color: #d64cec;
+            cursor: pointer;
+        }
+
+        td.empty {
+            background-color: transparent;
+        }
+
+        /* Styling for Sundays */
+        .sunday {
+            background-color: #ffcccc;
+        }
+
+        /* .sunday:hover {
+            background-color: red;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="calendar">
+        <h2>February 2025</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="sunday">2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class="sunday">9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td class="sunday">16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td class="sunday">23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td class="empty"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

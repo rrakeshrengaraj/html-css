@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Rakesh Rengaraj</h1>
+            <p>I'm an MCA student with a passion for software development and web technologies.</p>
+            <a href="#contact" class="cta-btn">Let's Connect</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <img src="images/profile.jpg" alt="Profile Image">
+            <div class="text">
+                <p>I'm currently pursuing my MCA at kalasalingam Academy of Research and Education. I have strong skills in web development and data structures. I'm passionate about creating scalable and efficient software solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-list">
+            <div class="skill-item">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress js"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>React</h3>
+                <div class="progress-bar">
+                    <div class="progress react"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="projects-gallery">
+            <div class="project-card">
+                <img src="images/agamflogo.jpeg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A android application project for Psychological Consulting Services.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/i1.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>A machine learning project for classifying images.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Rakesh Rengaraj. All rights reserved.</p>
+    </footer>
+</body>
+</html>
